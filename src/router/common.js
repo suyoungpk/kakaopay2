@@ -1,10 +1,9 @@
-import Main from '@/components/Main'
+import Join from '@/views/Join'
 
-const router = [{
+const router = [
+  {
     path: '/',
-    component: Main
-  },
-  { path: '*', component: Error }
+    component: Join
+  }
 ]
-
 export default router
