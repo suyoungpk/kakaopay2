@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css2?family=Meddon&display=swap);
+
+body,html {background: linear-gradient(to top,#7579ff 0%, #b224ef 100%) } 
+.login {display:flex;flex-flow:column wrap;height:100%;align-items: center;justify-content: center;padding:0 20px}
+.login h1{width:100%;font-family:'Meddon', cursive;color:#fff;width:100%;text-align:center;margin:0 0 20px}
+.login h1 + div{max-width:500px;width:100%;margin:0 0 10px}
+.login .alert{margin:0 0 10px;padding:0 20px;font-size:12px;color:#fff}
+.login .btn-join {position:fixed;bottom:10px;left:50%;transform: translate(-50%,0);text-align:center}
+.login .input-box{width:100%;font-size:14px}
+.login .input-box input{width:100%;height:40px;color: #fff; text-align: center; margin-bottom: 0.625rem; padding:0 0.9375rem; border:0;box-sizing:border-box; background-color: rgba( 0, 0, 0, 0.2 ); border-radius: 2.5rem;}
+.login .input-box label{transition:all .3s}
+.login .input-box input:focus + label,
+.login .input-box label.active{top:-10px;left:0;font-size:10px;}
+.login .btn-login{width:100%;  box-sizing:border-box; color:#7579ff;font-size:0.8125rem; height: 40px; background: #fff; border-radius: 2.5rem;}
+.login a{font-size: 0.8125rem; color: #fff;}
+.tray .btn-join{position:absolute;top:0;left:50%;transform: translate(-50%,-150%);font-size: 0.8125rem; color: #fff;text-align:center}
+
+/* .member_wrapper dl{margin:30px 0 0;border-top:2px solid #000;padding-top:10px} */
+.member_wrapper dl dt{position:relative;line-height:40px;font-size:14px;font-weight:700;color:#333}
+.member_wrapper dl dt .right{position:absolute;top:0;right:0;text-align:right;}
+.member_wrapper dl dt p{font-weight:normal;margin:-6px 0 10px;font-size:13px;color:#888;line-height:19px;letter-spacing:-0.05px}
+.member_wrapper dl dd .input-box{width:100%}
+.member_wrapper dl dd+dd,
+.member_wrapper dl dd+dt{margin:10px 0 0}
+.member_wrapper dl+div{width:100%;position:relative;text-align:left;line-height:40px}
+.member_wrapper dl+div .chk-box label{font-size:13px;color:#666;}
+.member_wrapper dl+div .right{position:absolute;top:0;right:0;text-align:right}
+.member_wrapper .btn-area{margin:14px 0 0;width:100%;padding: 0 0 20px;border-bottom:1px solid #D8D8D8;}
+.member_wrapper .btn-area.line{margin:20px 0 0;padding:0;border:0;}
+.member_wrapper .btn{width:100%}
+.member_wrapper .alert{position:absolute;top:180px;left:0;width:100%;text-align:center;font-size:14px;color:#F21111}
+
+.join .terms-list{border:1px solid #ccc;padding:20px;border-radius:3px}
+.join dt .right{height:100%;line-height:inherit}
+.join .chk-box label{font-size:13px;color:#555;font-weight:normal}
+.join .terms-list li {position:relative;}
+.join .terms-list li +li {margin:10px 0 0}
+.join .terms-list li .btn-view{position:absolute;top:0;right:0;display:inline-block;background:none;color:#777;font-size:12px;line-height:1.6em}
+.join .terms-list li .btn-view::before{position:absolute;bottom:0;left:0;width:100%;height:1px;content:"";background:#777}
+.join .member_wrapper {padding:20px}
+.join .member_wrapper dt .btn-view{position:absolute;top:8px;right:0;display:inline-block;background:none;color:#888;font-size: 13px;font-weight:300;line-height:1.6em}
+.join .member_wrapper dt .btn-view::before{position:absolute;bottom:0;left:0;width:100%;height:1px;content:"";background:#888}
+
