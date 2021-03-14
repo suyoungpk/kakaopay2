@@ -14,9 +14,9 @@
             <dd>
               <Input type="password" label="비밀번호를 입력해 주세요." invaild="비밀번호를 다시 입력해주세요." vaild="비밀번호를 정상으로 입력하셨습니다." name="userPw" id="userPw" @keyup="isPwdVaild" :isPass="pwdPass"/>
             </dd>
-            <dt>성별</dt>
+            <dt class="hidden">성별</dt>
             <dd class="gender"> <!-- 디자인 스타일 : theme1, theme2 -->
-              <Radio id="man" name="gender" label="남자"  type="theme2"/>
+              <Radio id="man" name="gender" label="남자"  type="theme2" :checked="true"/>
               <Radio id="woman" name="gender" label="여자"  type="theme2"/>
             </dd>
             <dt>생일</dt>
@@ -34,7 +34,7 @@
           </dl>
           <div class="agreement">
              <!-- 디자인 스타일 : theme1, theme2 -->
-            <CheckBox label="모든 약관 내용에 동의합니다." id="agreement" name="agreement" type="theme2"/>
+            <CheckBox label="모든 약관 내용에 동의합니다." id="agreement" name="agreement" type="theme2" :checked="false"/>
           </div>
           <div class="btn-area">
             <Btn text="가입하기"  />

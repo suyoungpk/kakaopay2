@@ -1,6 +1,6 @@
 <template>
   <div :class="['radio-box',type]">
-    <input type="radio" :id="id" :name="name">
+    <input type="radio" :id="id" :name="name" :checked="checked">
     <label :for="id">{{label}}</label>
   </div>
 </template>
@@ -12,7 +12,8 @@ export default {
     label:String,
     name:String,
     id:String,
-    type:String
+    type:String,
+    checked:Boolean
    },
   data(){
     return {
