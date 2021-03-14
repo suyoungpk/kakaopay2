@@ -1,13 +1,13 @@
 <template>
-  <div :class="['radio-box',type]">
-    <input type="radio" :id="id" :name="name">
+  <div :class="['chk-box',type]">
+    <input type="checkbox" :id="id" :name="name">
     <label :for="id">{{label}}</label>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Radio',
+  name: 'CheckBox',
     props: {
     label:String,
     name:String,

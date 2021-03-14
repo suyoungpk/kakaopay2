@@ -1,5 +1,11 @@
 # homework2
 
+## Project requirement
+```
+vue-cli3.x required Nodejs 8.9+
+
+```
+
 ## Project setup
 ```
 npm install
@@ -15,10 +21,27 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### 프로젝트 설명
 ```
-npm run lint
-```
+   
+ 사용 IDE: VSCode
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ +-- _config.yml
+    +-- _drafts
+    |   +-- begin-with-the-crazy-ideas.textile
+    |   +-- on-simplicity-in-technology.markdown
+    +-- _includes
+    |   +-- footer.html
+    |   +-- header.html
+    +-- _layouts
+    |   +-- default.html
+    |   +-- post.html
+    +-- _posts
+    |   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
+    |   +-- 2009-04-26-barcamp-boston-4-roundup.textile
+    +-- _data
+    |   +-- members.yml
+    +-- _site
+    +-- index.html
+ 
+```

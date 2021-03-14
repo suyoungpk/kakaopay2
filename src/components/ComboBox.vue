@@ -1,25 +1,44 @@
 <template>
-   <div class="select-box">
-      <input type="hidden" name="" title="선택된 옵션">
-      <button type="button" class="selected-option">중성부 여부</button>
-      <div class="option-list">
-        <div>
-          <ul>
-            <li><button type="button" data-val="value1">했고</button></li>
-            <li><button type="button" data-val="value2">하지 않았</button></li>
-            <li><button type="button" data-val="value3">했고</button></li>
-            <li><button type="button" data-val="value4">하지 않았</button></li>
-          </ul>
-        </div>
-      </div>
-    </div> 
+   <div class="select-box" ref="select">
+      <label :for="id" class="selected-option">{{label}}</label>
+      <select name="" :id="id"  @change="change">
+        <option  v-for="(item,index) in items" 
+          :key="index" 
+          :value="(item.value == undefined)?item:item.value" 
+          :selected="(item.selected == 'true')? true: false"
+        >{{(item.text == undefined)?item:item.text}}</option>
+      </select>
+    </div>
 </template>
 
 <script>
 export default {
   name: 'ComboBox',
-  props: {
-   
-  }
+    props: {
+    label:String,
+    items:Array,
+    name:String,
+    id:String,
+    width:String,
+    fill:String, 
+  },
+  data(){
+    return {
+    }
+  },
+  methods: {
+    change:function(){
+      const selectbox =this.$refs.select,
+            select = selectbox.querySelector('select'),
+            checkedOpt = select.querySelector('option:checked');
+      if(select.value.length > 0){
+          selectbox.classList.add('on');
+          selectbox.querySelector('label').innerText = checkedOpt.innerText;
+      }
+    }
+  },
+  mounted() {
+    this.change();
+  },
 }
 </script>
