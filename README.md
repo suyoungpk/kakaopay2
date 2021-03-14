@@ -25,7 +25,8 @@ npm run build
 ```
    
  사용 IDE: VSCode
-
+ browser support :  IE 10+, Chrome  89.0.4389.82, firefox
+ Mobile: 갤럭시 s21 
 ...
 |-- src
     |-- assets : 디자인 관련 resources
